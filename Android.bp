@@ -15,7 +15,8 @@ commonSharedLibraries = [
 
 cc_library_shared {
     name: "libcryptfs_hw",
-    header_libs: ["qseecom-kernel-headers",
+    header_libs: ["generated_kernel_headers",
+                  "qseecom-kernel-headers",
                   "libhardware_headers",
                   "libcryptfshw_hidl_headers",],
     srcs: sourceFiles,
